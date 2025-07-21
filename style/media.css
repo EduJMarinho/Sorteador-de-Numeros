@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 26rem){
+  #background-image {
+  display: block;
+  padding: 1.5rem;
+  }  
+
+  header {
+    padding-bottom: .5rem;  
+    text-align: center;    
+
+    & img {
+    height:  3.8rem;    
+    margin-left: 3.5rem;
+    padding-bottom: 2rem;
+    }
+
+  }
+
+  main {    
+  margin: .5rem 0 0 .5rem;
+
+    & h1 {
+        font: var(--display-medium);
+    }
+
+    & h3 {      
+      font-size: .8rem;   
+      margin-bottom: .5rem;
+    }
+  }
+
+    #questions {       
+    gap: .5rem;
+    display: none;
+  }
+
+
+aside {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+
+   & h2 {   
+     font-size: small;
+    }
+  }
+
+  /* Cabeçalho do Aside */
+  .header-aside {   
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    gap: .5rem;
+
+    & h2 {
+      margin-bottom: .5rem;
+    }
+
+    & p {     
+      font-size: small;
+    }
+  }
+
+  /* Parte da apresentação dos números - primeira animação*/
+  .numbers {    
+
+    & h2 {
+      font-size: .7rem;      
+    }
+  }
+
+    /* Botão de sortear os números. */
+  .box {    
+    margin-top: 1.8rem;    
+    width: 20.2rem;
+    height: 3rem;  
+  }
+}

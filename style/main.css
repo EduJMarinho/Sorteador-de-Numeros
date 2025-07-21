@@ -1,49 +1,56 @@
-header {
-  padding-bottom: 4rem;
-  max-width: 100%;
-}
+  /* Cabeçalho */
+  header {
 
-.p-rose {
-  color: var(--content-brand);
-}
-
-main {
-  border: solid 1px green;
-  margin: 4rem;
-  display: flex;
-  flex-direction: column;
-
-  & h3 {
-    margin-bottom: 1.75rem;
-    font: var(--overline);
-    background-image: linear-gradient(to right, #C7C9CC 0%, #3D3D3D 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 1.2rem;
-    font-weight: bolder;
+    padding-bottom: 4rem;
+    max-width: 50%;    
   }
 
-  & h1 {
-    padding-bottom: 2rem;
-    width: auto;
+  /* Inicio do main - primeira parte do Projeto. */
+  main {    
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    min-width: 20rem;
+    margin-left: 5rem;
+    margin: 2rem 0 0 4rem;
+
+    & h3 {
+      margin-bottom: 2rem;
+      font: var(--overline);
+      background-image: var(--background-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: 1.2rem;
+      font-weight: bolder;
+    }
+
+    & h1 {
+      padding-bottom: 2rem;   
+      white-space: nowrap;
+    }
   }
-}
 
-#questions {
-  max-width: 24rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
-.quest {
-  display: grid;
-  grid-template-areas:
-    "flame text"
-    "flame text";
-
-  & .text {
-    padding-left: .5rem;
+  /* Textos das perguntas - Como Funciona... e Posso escolher... */
+  #questions {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
-}
+
+  .quest {
+    display: grid;
+    grid-template-areas:
+      "flame text"
+      "flame text";
+
+    & .text {
+      padding-left: .5rem;
+    }
+  }
+
+  .p-rose {
+    color: var(--content-brand);
+  }
+

@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&
+    display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&
+    display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
   <link
-    
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&
-    display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&
-    display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="index.css">
   <title>Sorteador de Números</title>
@@ -33,7 +34,7 @@
 
       <h1>SORTEADOR <br>DE NÚMEROS</h1>
 
-      <section id="questions">
+      <section id="questions" class="desktop-only">
         <div class="quest">
           <div class="flame">
             <img src="assets/Frame-2.svg" alt="question">
@@ -41,7 +42,7 @@
           <div class="text">
             <p class="p-rose">Como funciona o sorteador de números?</p>
             <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado
-              pelo usuário.</p>
+            pelo usuário.</p>
           </div>
         </div>
 
@@ -60,7 +61,8 @@
     <aside>
       <div class="header-aside">
         <h2>QUERO SORTEAR:</h2>
-        <P> Defina o intervalo e a quantidade de números, clique em <br>"Sortear" e veja os resultados na tela. É rápido e fácil!</P>
+        <P> Defina o intervalo e a quantidade de números, clique em "Sortear"!<br>Veja os resultados na tela. É rápido
+        e fácil!</P>
       </div>
 
       <section class="showing">
@@ -68,54 +70,53 @@
         <div class="numbers">
           <h2>NÚMEROS</h2>
           <div class="bordcolor">
-            <div class="conteudo">          
-          <h2>2</h2>
+            <div class="conteudo">
+              <h2>2</h2>
+            </div>
           </div>
-        </div>
         </div>
 
-       <div class="numbers">
+        <div class="numbers">
           <h2>DE</h2>
           <div class="bordcolor">
-            <div class="conteudo">          
-          <h2>1</h2>
+            <div class="conteudo">
+              <h2>1</h2>
+            </div>
           </div>
-        </div>
         </div>
         <div class="numbers">
           <h2>A</h2>
           <div class="bordcolor">
-            <div class="conteudo">          
-          <h2>100</h2>
+            <div class="conteudo">
+              <h2>100</h2>
+            </div>
           </div>
         </div>
-        </div>
-        </section>
-
- <section id="Toggle">
-  
-<input type="checkbox" id="chk">
-
-<label for="chk" class="switch">
-  <span class="slider"></span>  
-</label>
-<p>Não repetir número</p>
       </section>
 
-      
-        <button class="box">
-          <p>SORTEAR</p>
-          <img src="assets/Frame-1.svg" alt="">
-        </button>
-      
+      <section id="Toggle">
+
+        <input type="checkbox" id="chk">
+
+        <label for="chk" class="switch">
+          <span class="slider"></span>
+        </label>
+        <p>Não repetir número</p>
+      </section>
+
+
+      <button class="box">
+        <p>SORTEAR</p>
+        <img src="assets/Frame-1.svg" alt="">
+      </button>
+
+
+
 
     </aside>
-
 
   </section>
   <script src="script.js"></script>
 </body>
 
 </html>
-
-

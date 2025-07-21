@@ -29,6 +29,8 @@
   --accent-red: #E9A9B3;
 
   /* Gradiente */
+  --gradiente-text: linear-gradient(120deg, #3f1e44 , white );
+
   --gradient-background: linear-gradient(to right,
       #D586E0 0%,
       #91A1FA 98.93%);
@@ -46,7 +48,7 @@
   --ff-roboto-flex: 'Roboto Flex', sans-serif;
 
   --display-large: 800 4.5rem var(--ff-sora);
-  --display-medium: 800 2.5rem var(--ff-sora);
+  --display-medium: 800 2.6rem var(--ff-sora);
   --display-small: 500 2rem var(--ff-sora);
 
   --overline: 500 1rem var(--ff-roboto-mano);
@@ -64,9 +66,12 @@
 
 body {
   background-color: var(--background-primary);
-  max-width: 100%;
+  width: 100%;  
+  height: 100vh;  
+  display: flex;     
+  align-items: center;
+  justify-content: center ;
 }
-
 h1 {
   font: var(--display-large);
   color: var(--content-primary);
@@ -87,7 +92,14 @@ p {
   color: var(--content-secondary);
 }
 
+
 #background-image {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   background: url(../assets/Shapes.png);
-}
+  gap: 6.5rem;
+  padding: 8rem;
+  width: 100%;
+  height: 100%;  
+}  
