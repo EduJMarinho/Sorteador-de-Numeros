@@ -12,6 +12,10 @@
     }
   }
 
+#asideOne {
+   display: none; 
+  }
+
   /* Cabeçalho do Aside */
   .header-aside {
     display: flex;
@@ -84,7 +88,7 @@
   .bordcolor::after {
     content: "";
     position: absolute;
-    inset: 4px;
+    inset: 5px; /* Largura - borda colorida animada */
     background: var(--background-tertiary);
     border-radius: 50%;
     z-index: 1;
@@ -172,7 +176,7 @@
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
-    width: 23rem;
+    width: 27rem;
     height: 4rem;
     background-color: var(--background-tertiary);
     font: var(--label-medium);
@@ -181,15 +185,19 @@
     border-radius: .5rem;
     overflow: hidden;
     cursor: pointer;
+    
   }
 
   .box::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 800%;
+    inset: 10px -30px;   
     background: var(--background-gradient);
     animation: snake 3s linear infinite;
+  }
+
+  .box:hover::before {
+    inset: -15rem -5rem;   
   }
 
   @keyframes snake {
@@ -202,7 +210,7 @@
     content: "";
     position: absolute;
     background-color: var(--background-tertiary);
-    inset: 4px;
+    inset: 4px; /* largura - borda animada colorida*/
     border-radius: inherit;
   }
 

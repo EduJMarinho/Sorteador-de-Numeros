@@ -42,7 +42,7 @@
           <div class="text">
             <p class="p-rose">Como funciona o sorteador de números?</p>
             <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado
-            pelo usuário.</p>
+              pelo usuário.</p>
           </div>
         </div>
 
@@ -59,64 +59,119 @@
     </main>
 
     <aside>
-      <div class="header-aside">
-        <h2>QUERO SORTEAR:</h2>
-        <P> Defina o intervalo e a quantidade de números, clique em "Sortear"!<br>Veja os resultados na tela. É rápido
-        e fácil!</P>
-      </div>
+      <!-- Aside - parte um -->
+      <section id="asideOne">
 
-      <section class="showing">
+        <div class="header-aside">
+          <h2>QUERO SORTEAR:</h2>
+          <P> Defina o intervalo e a quantidade de números, clique em "Sortear"!<br>Veja os resultados na tela. É rápido
+            e fácil!</P>
+        </div>
 
-        <div class="numbers">
-          <h2>NÚMEROS</h2>
-          <div class="bordcolor">
-            <div class="conteudo">
-              <h2>2</h2>
+        <section class="showing">
+
+          <div class="numbers">
+            <h2>NÚMEROS</h2>
+            <div class="bordcolor">
+              <div class="conteudo">
+                <h2>2</h2>
+              </div>
             </div>
+          </div>
+
+          <div class="numbers">
+            <h2>DE</h2>
+            <div class="bordcolor">
+              <div class="conteudo">
+                <h2>1</h2>
+              </div>
+            </div>
+          </div>
+          <div class="numbers">
+            <h2>A</h2>
+            <div class="bordcolor">
+              <div class="conteudo">
+                <h2>100</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Toggle">
+
+          <input type="checkbox" id="chk">
+
+          <label for="chk" class="switch">
+            <span class="slider"></span>
+          </label>
+          <p>Não repetir número</p>
+        </section>
+
+        <button class="box">
+          <p>SORTEAR</p>
+          <img src="assets/Frame-1.svg" alt="">
+        </button>
+      </section>
+
+      <!-- Aside - parte dois -->
+      <section id="asideTwo" class="geraNumeros">
+        <h2>RESULTADO DO SORTEIO</h2>
+
+        <div id="resultado">
+          <span id="valor">0</span>
+          <p>º</p>
+          <h2>RESULTADO</h2>
+        </div>
+
+        <section class="elem-rot">
+          <div class="wrapper">
+            <div id="transitionRotate"></div>
+
+            <div class="numeros-sobrepostos">
+              <p id="numero1"></p>
+              <p id="numero2"></p>
+            </div>
+          </div>
+        </section>
+
+        <button id="numbers">
+          <p>SORTEAR NOVAMENTE</p>
+          <img src="./assets/Frame.svg" alt="ícone giratório" />
+        </button>
+      </section>
+
+      <section id="questions-mobile">
+        <div class="quest">
+          <div class="flame">
+            <img src="assets/Frame-2.svg" alt="question">
+          </div>
+          <div class="text">
+            <p class="p-rose">Como funciona o sorteador de números?</p>
+            <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado
+              pelo usuário.</p>
           </div>
         </div>
 
-        <div class="numbers">
-          <h2>DE</h2>
-          <div class="bordcolor">
-            <div class="conteudo">
-              <h2>1</h2>
-            </div>
+        <div class="quest">
+          <div class="flame">
+            <img src="assets/Frame-2.svg" alt="question">
           </div>
-        </div>
-        <div class="numbers">
-          <h2>A</h2>
-          <div class="bordcolor">
-            <div class="conteudo">
-              <h2>100</h2>
-            </div>
+          <div class="text">
+            <p class="p-rose">Posso escolher o intervalo dos números?</p>
+            <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
           </div>
         </div>
       </section>
-
-      <section id="Toggle">
-
-        <input type="checkbox" id="chk">
-
-        <label for="chk" class="switch">
-          <span class="slider"></span>
-        </label>
-        <p>Não repetir número</p>
-      </section>
-
-
-      <button class="box">
-        <p>SORTEAR</p>
-        <img src="assets/Frame-1.svg" alt="">
-      </button>
-
-
-
-
     </aside>
 
   </section>
   <script src="script.js"></script>
 </body>
 
+
+
+
 </html>
+
+
+

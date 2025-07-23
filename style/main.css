@@ -35,8 +35,7 @@
   #questions {
     max-width: 24rem;
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    flex-direction: column;   -
   }
 
   .quest {
@@ -53,4 +52,35 @@
   .p-rose {
     color: var(--content-brand);
   }
+
+  /* Textos das perguntas - Como Funciona... e Posso escolher... para MOBILE */
+  #questions-mobile {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;        
+    display: none;
+
+    & p {
+      font-size: small;
+    }
+  }
+
+  .quest {
+    padding-top: .5rem;
+    display: grid;
+    grid-template-areas:
+      "flame text"
+      "flame text";
+      
+      
+    & .text {
+      padding-left: .5rem;
+      padding-bottom: 1rem;      
+    }
+  }
+
+  .p-rose {
+    color: var(--content-brand);
+  }
+
 
