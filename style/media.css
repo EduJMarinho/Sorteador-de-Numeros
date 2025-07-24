@@ -1,4 +1,4 @@
- /* Mobile 480px */
+ /* Responsividade para Mobile 480px */
  @media screen and (max-width: 30em) {
 
    #background-image {
@@ -16,7 +16,7 @@
      width: 8rem;
    }
 
-   /* Inicio do main - primeira parte do Projeto. */
+   /* Inicio do main. */
    main h3 {
      font-size: .8rem;
    }
@@ -26,8 +26,8 @@
      font-size: 2.5rem;
    }
 
-   #questions {
-     /* Exibida somente no Desktop*/
+    /* Parte exibida somente para Desktop*/
+   #questions {    
      display: none;
    }
 
@@ -157,7 +157,7 @@
      }
    }
 
-   /* Textos das perguntas - Como Funciona... e Posso escolher... para MOBILE */
+   /* Textos das perguntas - Como Funciona... e Posso escolher... somente para MOBILE */
    #questions-mobile {
      padding-top: 2.5rem;
      flex-direction: column;
