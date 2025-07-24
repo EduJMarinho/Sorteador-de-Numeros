@@ -5,21 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&
-    display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&
-    display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css">
+  
   <title>Sorteador de Números</title>
 </head>
 
@@ -34,7 +28,7 @@
 
       <h1>SORTEADOR <br>DE NÚMEROS</h1>
 
-      <section id="questions" class="desktop-only">
+      <section id="questions">
         <div class="quest">
           <div class="flame">
             <img src="assets/Frame-2.svg" alt="question">
@@ -64,7 +58,7 @@
 
         <div class="header-aside">
           <h2>QUERO SORTEAR:</h2>
-          <P> Defina o intervalo e a quantidade de números, clique em "Sortear"!<br>Veja os resultados na tela. É rápido
+          <P> Defina o intervalo e a quantidade de números, clique em "Sortear"!Veja os resultados na tela. É rápido
             e fácil!</P>
         </div>
 
@@ -107,12 +101,13 @@
           <p>Não repetir número</p>
         </section>
 
-        <button class="box">
+        <button id="box" onclick="alternarSecoes()">
           <p>SORTEAR</p>
           <img src="assets/Frame-1.svg" alt="">
-        </button>
-      </section>
+        </button>       
 
+      </section>
+      
       <!-- Aside - parte dois -->
       <section id="asideTwo" class="geraNumeros">
         <h2>RESULTADO DO SORTEIO</h2>
@@ -140,6 +135,7 @@
         </button>
       </section>
 
+      <!-- Parte da perguntas somente para Display Mobile -->
       <section id="questions-mobile">
         <div class="quest">
           <div class="flame">
@@ -172,6 +168,3 @@
 
 
 </html>
-
-
-

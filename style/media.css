@@ -1,13 +1,179 @@
-     /* Mobile 375px */
-@media (max-width: 375px) {
+ /* Mobile 480px */
+ @media screen and (max-width: 30em) {
 
-  #questions-mobile{
-display: flex;
-flex-direction: column;
-}
+   #background-image {
+     padding: 1rem 0;
+   }
 
+   /* Cabeçalho */
+   header {
+     padding-bottom: .52rem;
+     max-width: 100%;
+     text-align: center;
+   }
 
+   header img {
+     width: 8rem;
+   }
 
+   /* Inicio do main - primeira parte do Projeto. */
+   main h3 {
+     font-size: .8rem;
+   }
 
+   main h1 {
+     padding-bottom: .5rem;
+     font-size: 2.5rem;
+   }
 
-}
+   #questions {
+     /* Exibida somente no Desktop*/
+     display: none;
+   }
+
+   /* Inicio do Aside - Aside parte um  */
+   aside {
+     padding: .5rem 0;
+     width: 100%;
+   }
+
+   aside h2 {
+     font-weight: bolder;
+     font-size: medium;
+   }
+
+   aside p {
+     font-size: 1rem;
+   }
+
+   /* Cabeçalho do Aside */
+   .header-aside {     
+     margin-top: 1.5rem;
+     margin-bottom: 1.5rem;
+     gap: .7rem;
+   }
+
+   .header-aside h2 {
+     margin-bottom: .5rem;
+   }
+
+   .header-aside p {
+     width: 100%;
+   }
+
+   /* Parte da apresentação dos números - primeira animação*/
+   .numbers {
+     gap: .5rem;
+     padding-top: .5rem;
+   }
+
+   .numbers h2 {
+     font-size: small;
+     width: 100%;
+   }
+
+   /* Botão de sortear os números. */
+   #box {
+     margin-top: 2.3rem;
+     width: 100%;
+   }
+
+   /*Aside parte dois*/
+
+   /* Gerador de números aleatórios */
+   .geraNumeros {
+     padding-top: 1rem;
+   }
+
+   .geraNumeros h2 {
+     font-size: 1.2rem;
+   }
+
+   #resultado {
+     padding-top: 2rem;
+   }
+
+   #resultado h2 {
+     padding: .5rem 0;
+     font-size: .8rem;
+   }
+
+   #resultado p,
+   #resultado span {
+     padding: .5rem 0;
+     font-size: 1rem;
+     color: white;
+   }
+
+   .wrapper {
+     width: 100%;
+     height: 100%;
+   }
+
+   .numeros-sobrepostos {
+     font-size: 2rem;     
+    padding-bottom: .1rem ;
+   }
+
+   .numeros-sobrepostos p {
+     padding-bottom: .5rem;
+     font-size: 1.6em;
+   }
+
+   /* Botão Sortear Novamente*/
+   #numbers {
+     width: 100%;
+     margin: 5.5rem auto 0;
+   }
+
+   #transitionRotate {
+     position: relative;
+     width: 7rem;
+     height: 7rem;     
+   }
+
+   /* Deslocamentos dos numeros sorteados */
+   @keyframes deslocaEsquerda {
+     0% {
+     transform: translate(-50%, -50%) translateX(0);
+     color: black;
+    }
+
+     100% {
+       transform: translate(-50%, -50%) translateX(-6rem);
+       color: var(--accent-pink);
+     }
+   }
+
+   @keyframes deslocaDireita {
+     0% {
+       transform: translate(-50%, -50%) translateX(0);
+       color: black;
+     }
+
+     100% {
+       transform: translate(-50%, -50%) translateX(6rem);
+       color: var(--accent-pink);
+     }
+   }
+
+   /* Textos das perguntas - Como Funciona... e Posso escolher... para MOBILE */
+   #questions-mobile {
+     padding-top: 2.5rem;
+     flex-direction: column;
+     display: flex;
+     font-size: small;
+   }
+
+   .quest {
+     padding-top: .5rem;
+     display: grid;
+     grid-template-areas:
+       "flame text"
+       "flame text";
+   }
+
+   .p-rose {
+    color: var(--content-brand);
+   }
+ }

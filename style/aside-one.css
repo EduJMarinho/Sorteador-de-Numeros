@@ -1,20 +1,13 @@
-  /* Inicio do aside  */
-  aside {
-    min-width: 20rem;
-    max-width: 80rem;
-    padding: 2.4rem 0 0 3rem;
-    margin-left: 4rem;
-    margin-right: auto;
+  /* Inicio do Aside - Aside parte um  */
+  aside {   
+    width: 45%;
+    padding: 2.4rem 2.3rem 0 3rem;
+  }
     
-    & h2 {
+    aside h2 {
      font-weight: bolder;
       font-size: large;
-    }
-  }
-
-#asideOne {
-   display: none; 
-  }
+    }   
 
   /* Cabeçalho do Aside */
   .header-aside {
@@ -23,11 +16,15 @@
     margin-top: 6rem;
     margin-bottom: 4rem;
     gap: .7rem;
+  }
 
-    & h2 {
+    .header-aside h2 {
       margin-bottom: .5rem;
     }
-  }
+
+    .header-aside p{
+      width: 23.7rem;
+    }
 
   /* Parte da apresentação dos números - primeira animação*/
   .showing {
@@ -44,13 +41,13 @@
     align-items: center;
     justify-content: center;
     gap: .5rem;
+  }
 
-    & h2 {
+    .numbers h2 {
       font-size: small;
       width: 5rem;
       font-family: var(--ff-sora);
     }
-  }
 
   .bordcolor {
     display: flex;
@@ -65,7 +62,7 @@
   .bordcolor::before {
     content: "";
     position: absolute;
-    inset: -10px 30px;
+    inset: -.625rem 1.875rem;
     background: var(--background-gradient);
     animation: animar 4s linear infinite;
     transition: .6s;
@@ -107,30 +104,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
 
-    h2 {
+    .conteudo h2 {
       font-size: 2rem;
       color: var(--content-primary);
     }
 
-    h2:hover {
+    .conteudo h2:hover {
       font-size: 2.5rem;
-    }
-  }
+    }  
 
-  /* Botão de opção de repetir ou não os números. */
+  /* Botão (slider) de opção de repetir ou não os números. */
   #Toggle {
     display: flex;
     align-items: center;
     padding-top: 1rem;
+  }
 
-    & p {
+    #Toggle p {
       padding-left: .5rem;
       font-size: large;
       font: var(--label-medium);
       color: var(--content-primary);
-    }
-  }
+    } 
 
   #chk {
     display: none;
@@ -140,63 +137,60 @@
     display: flex;
     align-items: center;
     position: relative;
-    background: rgb(177, 206, 206);
-    width: 1.875rem;
-    height: 1.25rem;
-    border-radius: 2.5rem;
-    padding: 5px;
-    transition: all .5s ease-in-out;
+    background: var(--background-gray);
+    width: 2.87rem;
+    height: 1.8rem;
+    border-radius: 2.5rem;    
+    transition: all .6s ease-in-out;
     cursor: pointer;
   }
 
   .slider {
     position: absolute;
-    left: 2px;
+    margin-left: 3px;
     background-color: white;
     border-radius: 50%;
-    width: .875rem;
-    height: .875rem;
+    width: 1.5rem;
+    height: 1.5rem;
     transition: all .2s ease-in-out;
   }
 
   #chk:checked~.switch {
-    background: var(--gradient-background);
+    background: var(--background-gradient);
   }
 
   #chk:checked~.switch .slider {
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
-
   /* Botão de sortear os números. */
-  .box {
+  #box {
     position: relative;
-    margin-top: 5.5rem;
+    margin-top: 4.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
-    width: 27rem;
-    height: 4rem;
+    width: 23.7rem;
+    height: 3.5rem;
     background-color: var(--background-tertiary);
     font: var(--label-medium);
     color: white;
     border: none;
     border-radius: .5rem;
     overflow: hidden;
-    cursor: pointer;
-    
+    cursor: pointer;    
   }
 
-  .box::before {
+  #box::before {
     content: "";
     position: absolute;
-    inset: 10px -30px;   
+    inset: 0.625rem -1.875rem; 
     background: var(--background-gradient);
     animation: snake 3s linear infinite;
   }
 
-  .box:hover::before {
+  #box:hover::before {
     inset: -15rem -5rem;   
   }
 
@@ -206,7 +200,7 @@
     }
   }
 
-  .box::after {
+  #box::after {
     content: "";
     position: absolute;
     background-color: var(--background-tertiary);
@@ -214,25 +208,25 @@
     border-radius: inherit;
   }
 
-  .box p {
+  #box p {
     position: relative;
     z-index: 1;
     color: white;
     right: 1rem;
   }
 
-  .box:hover p {
-    font-size: 1.5rem;
+  #box:hover p {
+    font-size: 1.2rem;
   }
 
-  .box img {
+  #box img {
     position: relative;
     z-index: 1;
     color: white;
     width: 1.5rem;
   }
 
-  .box:hover img {
+  #box:hover img {
     animation: seta 1.6s linear infinite;
     width: 2.5rem;
   }
