@@ -24,4 +24,7 @@ Você pode visualizar o funcionamento
 
 
 
-> “Construir, errar, refatorar, aprender: esse é o caminho do Dev.” – Edu Marinho.
+🧠 Analisar 📚 Aprender ❌ Errar  
+    🔁 Refatorar  🛠️ Construirr  
+    ->   ->   ->   ->   ->   ->   ->    
+→ Esse é o caminho do Dev. — Edu Marinho
