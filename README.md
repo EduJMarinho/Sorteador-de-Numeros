@@ -24,7 +24,7 @@ Você pode visualizar o funcionamento
 
 
 
-🧠 Analisar  📚 Aprender  ❌ Errar  
+ 🧠 Analisar  📚 Aprender  ❌ Errar  
   🔁 Refatorar  🛠️ Construir  
         → → → → → → →  
 → Esse é o caminho do Dev. — Edu Marinho
